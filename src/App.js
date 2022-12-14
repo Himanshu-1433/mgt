@@ -1,10 +1,39 @@
-import logo from './logo.svg';
+import React , {useState} from 'react';
 import './App.css';
 
 function App() {
+  // const [name , Name_change] = useState("hello");
+  const [check , checking] = useState("hello");
+  const [name , Change_name] = useState("hola")
+  // function click_f(){
+  //   if(check === true)
+  //   {   
+  //     console.log(check);
+  //     checking(false);
+  //   } 
+  //   if(check === false)
+  //   {
+  //     console.log(check)
+  //     checking(true);
+  //   }
+  // }
   return (
     <div className="App">
-      <h1>bahutik</h1>
+    
+      <h1>{check}</h1>
+      <button className='btn btn-outline-info' onClick={() => 
+      {
+        if(check === 'hola')
+        {
+        checking('hello')
+        Change_name('hola')
+        }
+        else if(check === 'hello'){
+          checking('hola')
+          Change_name('hello');
+        }
+      }
+      }>{name}</button>
     </div>
   );
 }
