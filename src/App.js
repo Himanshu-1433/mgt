@@ -2,26 +2,14 @@ import React , {useState} from 'react';
 import './App.css';
 
 function App() {
-  // const [name , Name_change] = useState("hello");
+  
   const [check , checking] = useState("hello");
   const [name , Change_name] = useState("hola")
-  // function click_f(){
-  //   if(check === true)
-  //   {   
-  //     console.log(check);
-  //     checking(false);
-  //   } 
-  //   if(check === false)
-  //   {
-  //     console.log(check)
-  //     checking(true);
-  //   }
-  // }
   return (
     <div className="App">
-    
       <h1>{check}</h1>
-      <button className='btn btn-outline-info' onClick={() => 
+      <button className='btn btn-outline-info' 
+      onClick={() => 
       {
         if(check === 'hola')
         {
@@ -33,7 +21,8 @@ function App() {
           Change_name('hello');
         }
       }
-      }>{name}</button>
+    }
+    >{name}</button>
     </div>
   );
 }
