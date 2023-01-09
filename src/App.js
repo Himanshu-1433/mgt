@@ -27,7 +27,7 @@ function App() {
         }
       }
     }
-    >{name}</button>
+    >{name} </button>
     </div>
   );
 }
